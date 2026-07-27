@@ -1,7 +1,31 @@
 aid: foodology
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/foodology.png
 name: Foodology
-description: Foodology is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Foodology is a Bogota-based food-tech company building what it calls the largest
+  group of delivery-focused virtual restaurant brands in Latin America. Founded in 2019
+  by Daniela Izquierdo and Juan Guillermo Azuero, it operates a cloud-kitchen (ghost
+  kitchen) model, creating restaurant brands from scratch and running them out of shared
+  commissaries and kitchens so multiple brands share real estate, ingredients, and staff.
+  Marquee brands include Brunch & Munch (the #1 breakfast delivery brand in Colombia) and
+  Avocalia (a leading salad brand). Foodology runs more than 85 cloud kitchens across
+  Colombia, Mexico, Brazil, and Peru and reports over 300,000 delivered orders per month.
+  It is backed by Andreessen Horowitz (a16z), Base10/Base Partners, Wollef, Kayyak,
+  Chimera, and artist Maluma, having raised a $15M Series A and a later $50M round. This
+  profile was surfaced as an a16z portfolio company and added to the API Evangelist network;
+  Foodology is a consumer food-delivery operator and does not publish a public developer
+  API, SDKs, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/foodology/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Food Delivery
+- Cloud Kitchen
+- Virtual Restaurants
+- Food Tech
+- Latin America
+- Consumer
 apis: []
+common:
+- type: DomainSecurity
+  url: security/foodology-domain-security.yml
+- type: Website
+  url: https://www.foodology.com.co/
+- type: PrivacyPolicy
+  url: https://www.foodology.com.co/poltica-de-tratamiento-de-datos-personales
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
